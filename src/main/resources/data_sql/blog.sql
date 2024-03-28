@@ -1,0 +1,22 @@
+INSERT INTO blog (manager_id, name)
+VALUES
+    (1, 'WanderlustChronicles'),
+    (2, 'TechGeekInsights'),
+    (3, 'HealthyHabitsHub'),
+    (4, 'CraftyCreatives'),
+    (5, 'FoodieFusion'),
+    (6, 'MindfulMusings'),
+    (7, 'FashionForwardLane'),
+    (8, 'PetPawPrints'),
+    (9, 'BookwormBoulevard'),
+    (10, 'FitnessFlow'),
+    (11, 'TravelTalesUnfolded'),
+    (12, 'GardenGurus'),
+    (13, 'ArtisticAlchemy'),
+    (14, 'CareerCatalyst'),
+    (15, 'ParentingPulse'),
+    (16, 'EcoWarriorWave'),
+    (17, 'MusicMosaic'),
+    (18, 'HomeSweetHomestead'),
+    (19, 'AdventureAwaits'),
+    (20, 'SoulfulExpressions');

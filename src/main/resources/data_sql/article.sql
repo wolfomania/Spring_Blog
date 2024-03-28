@@ -1,0 +1,22 @@
+INSERT INTO article (title, author_id, blog_id)
+VALUES
+    ('Unlocking Creativity: A Journey Through Artistic Expression', 1, 1),
+    ('The Science Behind Mindfulness Meditation', 2, 2),
+    ('Exploring the Mysteries of Quantum Physics', 3, 1),
+    ('From Chaos to Calm: Organizing Your Digital Life', 4, 4),
+    ('The Rise of Sustainable Fashion: Ethical Choices', 5, 3),
+    ('Navigating Remote Work Challenges: Tips for Success', 6, 6),
+    ('The Healing Power of Music: A Therapeutic Journey', 7, 5),
+    ('Unraveling Ancient Civilizations: Archaeological Discoveries', 8, 8),
+    ('Beyond the Screen: Rediscovering the Joy of Reading', 9, 7),
+    ('The Art of Storytelling: Crafting Compelling Narratives', 10, 10),
+    ('Innovations in Renewable Energy: Shaping Our Future', 11, 9),
+    ('From Farm to Fork: Exploring Food Sustainability', 12, 12),
+    ('The Intersection of Technology and Mental Health', 13, 13),
+    ('Hidden Gems: Exploring Lesser-Known Travel Destinations', 14, 14),
+    ('The Impact of Social Media on Relationships', 15, 15),
+    ('The Quest for Artificial Intelligence: Challenges and Breakthroughs', 16, 16),
+    ('The Art of Resilience: Overcoming Lifes Challenges', 17, 17),
+    ('The Beauty of Mathematical Patterns: Fibonacci and Fractals', 18, 18),
+    ('Rediscovering Nature: Ecotherapy and Well-Being', 19, 19),
+    ('The Evolution of Space Exploration: From Sputnik to Mars', 20, 20);

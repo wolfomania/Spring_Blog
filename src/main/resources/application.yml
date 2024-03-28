@@ -1,0 +1,19 @@
+spring:
+  h2:
+    console:
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:./db/books;
+    username: user
+    password: pass
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    defer-datasource-initialization: true
+  sql:
+    init:
+      data-locations: classpath:data_sql/role.sql, classpath:data_sql/users.sql, classpath:data_sql/blog.sql, classpath:data_sql/article.sql, classpath:data_sql/blog_articles.sql, classpath:data_sql/users_roles.sql
+      mode: always

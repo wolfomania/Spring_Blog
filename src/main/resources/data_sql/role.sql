@@ -1,0 +1,22 @@
+INSERT INTO role (name)
+VALUES
+    ('Owner'),
+    ('Co-Owner'),
+    ('Head Admin'),
+    ('Admin'),
+    ('Head Mod'),
+    ('Mod'),
+    ('Assistant Mod'),
+    ('Helper'),
+    ('Staff'),
+    ('VIP'),
+    ('MVP'),
+    ('Male'),
+    ('Female'),
+    ('Knight'),
+    ('Eternal'),
+    ('Immortal'),
+    ('Lord'),
+    ('Duke'),
+    ('Duchess'),
+    ('Titan');

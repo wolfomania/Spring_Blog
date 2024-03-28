@@ -1,0 +1,22 @@
+INSERT INTO users (email)
+VALUES
+    ('random1@gmail.com'),
+    ('emailuser2@gmail.com'),
+    ('address3@gmail.com'),
+    ('user4@gmail.com'),
+    ('testemail5@gmail.com'),
+    ('example6@gmail.com'),
+    ('mailuser7@gmail.com'),
+    ('fakeemail8@gmail.com'),
+    ('tempaddress9@gmail.com'),
+    ('randomuser10@gmail.com'),
+    ('email11@gmail.com'),
+    ('address12@gmail.com'),
+    ('user13@gmail.com'),
+    ('testemail14@gmail.com'),
+    ('example15@gmail.com'),
+    ('mailuser16@gmail.com'),
+    ('fakeemail17@gmail.com'),
+    ('tempaddress18@gmail.com'),
+    ('randomuser19@gmail.com'),
+    ('email20@gmail.com');
