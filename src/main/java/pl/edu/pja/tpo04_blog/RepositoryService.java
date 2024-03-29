@@ -1,7 +1,6 @@
 package pl.edu.pja.tpo04_blog;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.edu.pja.tpo04_blog.tables.*;
@@ -99,7 +98,7 @@ public class RepositoryService {
             case 2 -> {
                 System.out.println("Choose one of the following constructor options:");
                 System.out.println("1. BlogName");
-                System.out.println("2. Manager_Id, BlogName");
+                System.out.println("2. BlogName, Manager_Id");
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1 -> {

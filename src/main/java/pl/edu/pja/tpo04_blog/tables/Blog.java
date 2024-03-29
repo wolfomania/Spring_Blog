@@ -73,7 +73,7 @@ public class Blog {
 
     @Override
     public String toString() {
-        String init = id + "\t|\t" + name + "\t" + manager.getId() + "\t|\t";
+        String init = id + "\t|\t" + name + "\t" + (manager != null ? String.valueOf(manager.getId()) : "No manager") + "\t|\t";
         for (Article article : articles)
             init += article.getId() + "\t";
         return init;

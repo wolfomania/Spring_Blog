@@ -98,7 +98,7 @@ public class User {
 
     @Override
     public String toString() {
-        String init = id + "\t|\t" + email + "\t" + managedBlog.getId() + "\t Articles: ";
+        String init = id + "\t|\t" + email + "\t" + (managedBlog != null ? String.valueOf(managedBlog.getId()) : "No blog") + "\t Articles: ";
         for (Article article : articles)
             init += article.getId() + "\t";
         return init;
