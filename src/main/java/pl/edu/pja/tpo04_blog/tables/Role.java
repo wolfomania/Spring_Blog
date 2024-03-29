@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity
 public class Role {
@@ -14,8 +15,8 @@ public class Role {
 
     private String name;
 
-    @ManyToMany(mappedBy = "roles", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    private Set<User> users = new HashSet<>();
+    @ManyToMany(mappedBy = "roles")
+    private Set<User> users;
 
     public Role() {
     }
@@ -43,8 +44,7 @@ public class Role {
     @Override
     public String toString() {
         String init = id + "\t|\t" + name + ": ";
-        for (User user : users)
-            init += user.getEmail() + "\t";
+        init += users.stream().map(User::getEmail).collect(Collectors.joining("\t"));
         return init;
     }
 }

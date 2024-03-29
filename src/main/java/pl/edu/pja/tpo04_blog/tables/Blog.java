@@ -2,7 +2,6 @@ package pl.edu.pja.tpo04_blog.tables;
 
 import jakarta.persistence.*;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -10,17 +9,33 @@ public class Blog {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "blog_id")
     private Long id;
 
     private String name;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    private Set<Article> articles = new HashSet<>();
+    @OneToMany(
+            mappedBy = "blog",
+            orphanRemoval = true,
+            cascade = {
+                    CascadeType.REMOVE,
+                    CascadeType.MERGE,
+                    CascadeType.REFRESH,
+//                    CascadeType.PERSIST,
+                    CascadeType.DETACH
+            }
+    )
+    private Set<Article> articles;
 
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne
+    @JoinColumn(name = "user_id")
     private User manager;
 
     public Blog() {
+    }
+
+    public Blog(String name) {
+        this.name = name;
     }
 
     public Blog(String name, User manager) {
@@ -52,11 +67,16 @@ public class Blog {
         this.manager = manager;
     }
 
+    public void addNewArticle(Article article) {
+        articles.add(article);
+    }
+
     @Override
     public String toString() {
-        String init = id + "\t|\t" + name + "\t" + manager.getId() + "\t";
+        String init = id + "\t|\t" + name + "\t" + manager.getId() + "\t|\t";
         for (Article article : articles)
             init += article.getId() + "\t";
         return init;
     }
+
 }

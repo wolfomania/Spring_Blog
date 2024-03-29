@@ -1,6 +1,7 @@
-INSERT INTO article (title, author_id, blog_id)
+INSERT INTO article (title, user_id, blog_id)
 VALUES
     ('Unlocking Creativity: A Journey Through Artistic Expression', 1, 1),
+    ('Unlocking Creativity: A Journey Through Artistic Expression', 1, null),
     ('The Science Behind Mindfulness Meditation', 2, 2),
     ('Exploring the Mysteries of Quantum Physics', 3, 1),
     ('From Chaos to Calm: Organizing Your Digital Life', 4, 4),

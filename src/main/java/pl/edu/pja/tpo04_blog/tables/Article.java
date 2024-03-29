@@ -11,10 +11,12 @@ public class Article {
 
     private String title;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User author;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
+    @JoinColumn(name = "blog_id")
     private Blog blog;
 
     public Article() {

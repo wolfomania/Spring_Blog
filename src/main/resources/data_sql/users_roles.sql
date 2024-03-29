@@ -1,4 +1,4 @@
-INSERT INTO users_roles (roles_id, users_id)
+INSERT INTO users_roles (role_id, user_id)
 VALUES
     (1, 1),
     (2, 2),

@@ -1,4 +1,4 @@
-INSERT INTO blog (manager_id, name)
+INSERT INTO blog (user_id, name)
 VALUES
     (1, 'WanderlustChronicles'),
     (2, 'TechGeekInsights'),
